@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Side Scroller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <header>
+        <h1>かんたん横スクロールゲーム</h1>
+        <p>スペースキーまたは画面タップでジャンプ。障害物をよけてスコアを伸ばそう！</p>
+      </header>
+      <canvas id="game" width="800" height="400" aria-label="横スクロールゲームのプレイ画面"></canvas>
+      <section class="info" aria-live="polite">
+        <div>スコア: <span id="score">0</span></div>
+        <div>ハイスコア: <span id="best-score">0</span></div>
+        <div id="message" class="message">スペースキーまたは画面タップでスタート</div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
