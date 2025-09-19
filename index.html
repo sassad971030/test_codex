@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Side Scroller</title>
+    <title>Side Scroller Action</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="layout">
       <header>
-        <h1>かんたん横スクロールゲーム</h1>
-        <p>スペースキーまたは画面タップでジャンプ。障害物をよけてスコアを伸ばそう！</p>
+        <h1>ロックマン風 横スクロールアクション</h1>
+        <p>
+          矢印キーまたはA/Dで移動、ZまたはSpaceでジャンプ、Xでショット。敵を倒してゴールまでたどり着こう！
+        </p>
       </header>
-      <canvas id="game" width="800" height="400" aria-label="横スクロールゲームのプレイ画面"></canvas>
+      <canvas
+        id="game"
+        width="800"
+        height="400"
+        aria-label="横スクロールアクションゲームのプレイ画面"
+      ></canvas>
       <section class="info" aria-live="polite">
         <div>スコア: <span id="score">0</span></div>
         <div>ハイスコア: <span id="best-score">0</span></div>
-        <div id="message" class="message">スペースキーまたは画面タップでスタート</div>
+        <div>ライフ: <span id="lives">0</span></div>
+        <div id="message" class="message">左右キーで移動、Zでジャンプ、Xでショット！</div>
       </section>
     </main>
     <script src="game.js"></script>
